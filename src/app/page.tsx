@@ -88,7 +88,7 @@ export default function Page() {
               type="email"
               placeholder="Enter your email address"
               required
-              className="flex-1 bg-transparent px-4 py-2 text-sm text-white placeholder:text-[#444444] focus:outline-none"
+              className="flex-1 bg-transparent px-4 py-2 text-sm text-white placeholder:text-[#11111] focus:outline-none"
             />
             <button
               type="submit"
@@ -105,16 +105,18 @@ export default function Page() {
 
       </div>
 
-      {/* Footer-Bereich */}
+{/* Footer-Bereich */}
       <div className="w-full flex flex-col z-10 border-t border-[#1a1a24] bg-[#0a0a0a]/90 backdrop-blur-md pb-6 pt-4 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
-        <div className="w-full overflow-hidden flex whitespace-nowrap opacity-40 select-none">
-          <div className="animate-scroll text-xl md:text-2xl font-bold tracking-[0.2em] text-[#555555]">
+        
+        {/* Helligkeit erhöht: opacity auf 80 gesetzt und Textfarbe auf ein helleres Grau (#999999) */}
+        <div className="w-full overflow-hidden flex whitespace-nowrap opacity-80 select-none">
+          <div className="animate-scroll text-xl md:text-2xl font-bold tracking-[0.2em] text-[#999999] drop-shadow-sm">
             <span className="pr-4">{marqueeText}</span>
             <span className="pr-4">{marqueeText}</span>
           </div>
         </div>
         
-
+   
       </div>
     </main>
   );
