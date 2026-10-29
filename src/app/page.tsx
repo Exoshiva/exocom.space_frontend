@@ -46,11 +46,12 @@ export default function Page() {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
-        .animate-scroll {
-          display: flex;
-          width: max-content;
-          animation: scroll-left 30s linear infinite;
-        }
+      .animate-scroll {
+        display: flex;
+        width: max-content;
+        /* Erhöht auf z.B. 90 Sekunden für einen sehr sanften, langsamen Lauf */
+        animation: scroll-left 90s linear infinite;
+      }
       `}</style>
 
       {/* CardNav - Oben zentriert auf maximaler Breite */}
@@ -74,7 +75,7 @@ export default function Page() {
       </div>
 
       {/* Zentrierter Hauptbereich mit Timer, Waitinglist UND Pulse Heart */}
-      <div className="flex-1 flex flex-col items-center justify-center w-full px-4 relative z-10 space-y-10 mt-10">
+      <div className="flex-1 flex flex-col items-center justify-center w-full px-4 relative z-10 space-y-10 pt-32 md:pt-48">
         
         <BetaCountdown />
 
